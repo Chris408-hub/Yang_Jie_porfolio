@@ -1,96 +1,86 @@
 @use '../abstracts' as a;
 
-#main-header{
-    
+#main-header {
     display: flex;
     justify-content: space-between;
-    
-   #main-nav{
-        #button {
-        width: 55px;
-        height: 40px;
-        background: url(../images/hamburger.svg) no-repeat center;
-        margin-top: 40px;
-        transition: all .5s ease;
-        border: 0;
-       
 
-        &.expanded {
+    #main-nav {
+        .hamburger-button {
+            width: 55px;
+            height: 40px;
+            background: url(../images/hamburger.svg) no-repeat center;
+            margin-top: 40px;
+            transition: all .5s ease;
+            border: 0;
 
-        transform: rotate(90deg);
+            &.expanded {
+                transform: rotate(90deg);
             }
         }
 
         #burger-con {
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 15px;
-        display:none;
-    }
-        
-        #burger-con.slide-toggle {
-            display: block;
-            }
-        
-
-        ul {
-        padding: 0;
-        background-color:a.$middle-color;
-        color: #fff;
-        z-index: 333;
-        
-        li a {
-        display: block;
-        padding: 10px;
-        width: 35px;
-        height: 35px;
-        text-align: center;
-        // color: #fff;
-        }
-        }
-   } 
-    
-   @media screen and (min-width: 768px){
-
-    #main-header{
-
-        #main-nav button{
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 15px;
             display: none;
-        }
 
-        #burger-con{
-            display: block;
-        }
+            &.slide-toggle {
+                display: block;
+            }
 
-        #main-nav ul {
-        display: flex;
-        justify-content: space-around;
-        }
+            ul {
+                padding: 0;
+                color: #fff;
+                z-index: 333;
 
-        #main-nav ul li a {
+                li a {
+                    display: block;
+                    padding: 10px;
+                    width: 120px;
+                    height: 35px;
+                    text-align: center;
+                    &:hover {
 
-        padding: 10px;
-        width: 60px;
-        height: 60px;
-        }
-    }
-    
-}
-
-@media screen and (min-width: 1920px){
-    #main-header{
-
-        #main-nav ul li a {
-
-        padding: 10px;
-        width: 100px;
-        height: 100px;
-
+                        color: a.$light-blue;
+                    }
+                }
+            }
         }
     }
+
+    @media screen and (min-width: 768px) {
+        #main-nav {
+            .hamburger-button {
+                display: none;
+            }
+
+            #burger-con {
+                display: block;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+
+                li a {
+                    padding: 10px;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        #main-nav {
+            ul li a {
+                padding: 10px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
 }
+
     
-    
-    
-    
-}
+  
