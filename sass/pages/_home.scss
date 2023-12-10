@@ -33,7 +33,7 @@
        
            a{
                 display: block;
-                text-align: center;
+                // text-align: center;
                 width: 110px;
                 height: 80px;
                 border-radius: 75px;
@@ -42,14 +42,17 @@
                 font-size: 15px;
 
                 &:hover {
-                border: 2px solid #fff;      
+                border: 1px solid #fff;
+                background-color: a.$light-blue;      
                 }
 
-                h3{
+             
+            }
+
+            h3{
                     text-align: center;
                     padding-top: 25%;
                 }
-            }
 
             #left{        
                 background-color: a.$left-color;      
@@ -60,24 +63,9 @@
             #right{
                 background-color: a.$right-color;      
             }
-
-
-            &:hover {
-                border: 2px solid #fff;      
-            }
     
 
-                a{
-                    display: block;
-                    text-align: center;
-                    width: 110px;
-                    height: 80px;
-                    border-radius: 75px;
-
-                    color: #ffffff;
-                    font-size: 18px;
-
-                }}
+            }
         }
     }
     }

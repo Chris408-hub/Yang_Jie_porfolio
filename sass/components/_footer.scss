@@ -1,20 +1,24 @@
 @use '../abstracts' as a;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 #main-footer {
 
 display: flex;
 justify-content: space-between;
 margin-top: 150px;
-// margin-bottom: 10px;
-}
 
-    #main-footer p{
-      font-size: 10px;
+
+p{
+      font-size: 12px;
       margin-left: 10px;
         
     }
 
-
+  }
 
 
 #case-footer{
@@ -35,9 +39,9 @@ justify-content: space-evenly;
 
 }
 
-footer p {
-    line-height: 40px;
-}
+// footer p {
+//     line-height: 40px;
+// }
 }
 
 
