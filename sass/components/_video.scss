@@ -1,0 +1,54 @@
+@use '../abstracts' as a;
+
+
+.video-player {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  height: 100vh;
+
+  #myVideo{
+  max-width: 800px; 
+  width: 100%; 
+  }
+}
+
+.controls {
+
+margin-top: 25px;
+    display: flex;
+    justify-content: center; 
+}
+
+.video-btn{
+    width: 90px;
+    height: 75px;
+    border-radius: 75px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    &:hover{
+        background-color: a.$light-blue;
+    }
+
+ 
+}
+
+// #playButton {
+//   background-color: #006ab0;
+// }
+
+// #pauseButton {
+//   background-color: #941001;
+// }
+
+// #restartButton {
+//   background-color: #008f3b;
+// }
+
+
+
+

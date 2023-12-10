@@ -1,0 +1,93 @@
+@use '../abstracts' as a;
+
+#project{
+
+.title {
+
+    margin-top: 50px;
+
+
+    h2 {
+        margin-left: 10px;
+    }
+    }
+
+    p{
+        margin: 20px 30px 10px;
+        line-height: 35px;
+    }
+
+#select{
+        margin-top:50px;
+        // margin-bottom: 20px;
+    ul{
+        display: flex;
+        justify-content:space-evenly;    
+        
+        button{
+
+            width: 80px;
+            height: 50px;
+            border-radius: 75PX;
+            background-color: a.$middle-color;
+            color: #fff;
+            &:hover{
+            border: 2px solid #fff;
+            background-color: a.$light-blue;
+            }
+        }
+    }
+}}
+#project-gallery{
+
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+   .gallery-box {
+        width: 90%;
+        margin: 10px;
+    }
+    .gallery-image{
+        width: 100%;
+        height: 230px;
+        transition: transform 0.3s ease-in-out;
+        &:hover{
+        transform: scale(0.9);
+        
+    }
+    }
+
+    
+
+@media screen and (min-width: 768px){
+
+
+#select{
+    ul{
+        button{
+
+            width: 110px; 
+            height: 80px;
+
+            }
+        }
+    }
+
+
+#project-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.gallery-box{
+    width: 48%;
+}
+.gallery-image{
+height: 90%;
+}
+
+
+}
+

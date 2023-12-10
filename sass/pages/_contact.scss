@@ -1,0 +1,225 @@
+@use '../abstracts' as a;
+
+
+#contact{
+    margin-top:80px;
+
+
+    
+    h2{
+       margin-bottom: 50px;
+    }
+
+    p{
+        line-height: 30px;
+        margin: 30px 30px;
+    }
+
+}
+
+#find{
+    
+
+    
+#send-email{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;    
+    border-radius: 75px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        margin: 20px;
+        font-size: 20px;
+
+    img{
+        width: 35%;
+        height: 35%;
+    }
+
+    }
+
+    a{
+        width: 30%;
+        height: 100%;
+        border-radius: 75px;
+        background-color: a.$middle-color;
+        z-index: 333;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+
+        &:hover{
+            border: 2px solid #fff;
+            background-color: a.$light-blue;
+
+        }
+
+    }
+}
+
+
+
+
+   #social-media{
+        width: 90%;
+        margin: 40px auto;
+        border: 2px solid a.$light-blue;
+
+        .social-media-icon{
+
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+            p {
+                margin: 50px 100px 20px 80px;
+            }
+        }
+
+   }
+   }
+    
+    
+
+
+
+
+#send-message{
+    .form-message #message-btn{
+        width: 30%;
+        background-color: a.$middle-color;
+        color: #fff;
+        font-size:20px;
+        &:hover{
+            border: 2px solid #fff;      
+            background-color: a.$light-blue;
+        }
+    }
+
+    .form-message textarea{
+        height: 200px;
+    }
+    .form-message input, textarea, button{
+        width: 90%;
+        height: 80px;
+        margin:20px 20px;
+        border-radius: 75px;
+    }   
+        #name{
+            border:2px solid a.$left-color;
+        }
+        #email{            
+            border:2px solid a.$middle-color;
+        }
+        #message{            
+            border:2px solid a.$right-color;
+            height: 300px;
+        }
+
+  
+    }
+
+#thanks-light-box{
+
+      width: 60%;
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: a.$primary-color;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+
+    #close-btn{
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    p{
+        margin: 200px 50px;
+        line-height: 30px;
+        
+    }
+    .heart-icon{
+    position: absolute;
+    top: 70%;
+    left: 50%;    
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+#find{
+    #send-email{
+        
+        height: 100px;
+        
+        p{
+            font-size:1fpx;
+            img{
+            width: 50%;
+            height: 50%;
+            }
+        }
+        a{
+            width:30%;
+        }
+
+    }
+   #social-media{
+        height: 300px;
+   }
+   }
+
+#send-message{
+    margin-left: 30px;
+.form-message #message-btn{
+    height: 120px;
+}
+}    
+    
+}
+
+@media screen and (min-width: 1920px) {
+
+#find{
+    #send-email{
+        height: 150px;
+        a{
+            width:20%;
+        }
+
+    }
+
+}
+ 
+#send-message{
+    margin-left: 50px;
+.form-message #message-btn{
+    height: 180px;
+    width: 20%;
+}
+
+
+}
+
+}
+
+
+
+
+
