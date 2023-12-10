@@ -1,0 +1,105 @@
+@use '../abstracts' as a;
+
+#project{
+
+.title {
+
+    margin-top: 50px;
+
+    // img,
+    // h2 {
+    //     margin: 0 auto; 
+    // }
+
+    h2 {
+        margin-left: 10px;
+    }
+    }
+
+    p{
+        margin: 20px 30px 10px;
+        line-height: 35px;
+    }
+
+#select-bar{
+        margin-top:50px;
+        margin-bottom: 50px;
+    ul{
+        display: flex;
+        justify-content:space-evenly;    
+        
+        button{
+
+            width: 80px;
+            height: 50px;
+            border-radius: 75PX;
+            background-color: a.$middle-color;
+            color: #fff;
+            &:hover{
+            border: 2px solid #fff;
+            background-color: a.$light-blue;
+            }
+        }
+    }
+}}
+#project-gallery{
+
+   .gallery-box {
+        width: 90%;
+        height: 210px;
+        background-color: rgb(175, 175, 175);
+        margin: 10px auto 0;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+
+
+#select-bar{
+    ul{
+        button{
+
+            width: 110px; 
+            height: 80px;
+
+            }
+        }
+    }
+
+
+#project-gallery{
+        display: flex;
+        flex-wrap: wrap;
+}
+#project-gallery .gallery-box{
+        width: 48%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px){
+    #project-gallery{
+        display: flex;
+        flex-wrap: wrap;
+}
+    #project-gallery .gallery-box{
+        width: 48%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1920px) {
+
+#project{
+
+    .gallery-box {
+        width: 800px;
+        height: 150px;
+    }
+}
+}
