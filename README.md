@@ -6,6 +6,20 @@ Welcome to my portfolio website! Here, I showcase my projects in coding and desi
 
 Feel free to find detailed descriptions and examples of my projects.
 
+## Technologies Used:
+
+HTML5
+CSS3
+JavaScript
+PHP
+Google Fonts API
+
+External Libraries:
+GSAP (GreenSock Animation Platform) for animations and scroll triggers.
+
+Cinema 4D
+Adobe Creative Suite
+
 ## Contact Me
 
 If you're interested in collaborating or have any questions about my work, you can reach out to me through:
