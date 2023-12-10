@@ -3,7 +3,8 @@
 require_once('connect.php');
 
 ///gather the form content
-$name = $_POST['name'];
+$fname = $_POST['firstname'];
+$lname = $_POST['lastname'];
 $email = $_POST['email'];
 $msg = $_POST['comments'];
 
@@ -11,13 +12,17 @@ $errors = [];
 
 //validate and clean these values
 
-$name = trim($name);
+$fname = trim($fname);
+$lname = trim($lname);
 $email = trim($email);
 $msg = trim($msg);
 
+if(empty($lname)) {
+    $errors['lastname'] = 'Last Name cant be empty';
+}
 
-if(empty($name)) {
-    $errors['name'] = 'Name cant be empty';
+if(empty($fname)) {
+    $errors['firstname'] = 'First Name cant be empty';
 }
 
 if(empty($msg)) {
@@ -34,7 +39,7 @@ if(empty($errors)) {
 
     //insert these values as a new row in the contacts table
 
-    $query = "INSERT INTO contacts ( name, email, comments) VALUES('$name','$email','$msg')";
+    $query = "INSERT INTO tbl_contact (lastname, firstname, email, comments) VALUES('$lname','$fname','$email','$msg')";
 
     if(mysqli_query($connect, $query)) {
 
@@ -44,7 +49,7 @@ $to = 'yjie9093@gmail.com';
 $subject = 'Message from your Portfolio site!';
 
 $message = "You have received a new contact form submission:\n\n";
-$message .= "Name: ".$name."\n";
+$message .= "Name: ".$fname." ".$lname."\n";
 $message .= "Email: ".$email."\n\n";
 //build out rest of message body...
 

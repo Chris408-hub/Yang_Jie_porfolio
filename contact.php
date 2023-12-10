@@ -6,9 +6,13 @@
 <section>
 <form method="post" action="sendmail.php">
 
+    <label for="first_name">First Name: </label>
+    <input type="text" name="firstname" id="firstname">
 
-    <label for="name">Name: </label>
-    <input type="text" name="name" id="name">
+<br><br>
+
+    <label for="last_name">Last Name: </label>
+    <input type="text" name="lastname" id="lastname">
 
     <br><br>
 
@@ -18,7 +22,7 @@
     <br><br>
 
     <label for="comments">Comments: </label>
-    <textarea name="comments" id="comments">LEAVE ME A Message</textarea>
+    <textarea name="comments" id="comments">comment here</textarea>
 
     <br><br>
 
