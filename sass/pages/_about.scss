@@ -1,0 +1,82 @@
+#self-intro{
+    position: relative;
+    .self-image{
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    z-index:-333;
+    bottom:35%;
+    right:10px;
+
+    }
+
+
+    div{
+        max-width: 100%;
+        position: relative;
+
+           p{
+        line-height: 30px;
+        font-size: 16px;
+        margin: 20px 50px;
+
+
+    }
+
+    
+        .icon{
+            width: 30px;
+            height:30px;
+
+        }
+
+    }
+
+
+}
+
+@media screen and (min-width: 768px){
+#self-intro{
+
+ .self-image{
+
+
+    bottom:-15%;
+    right:10px;
+ }    
+ 
+ div{
+        max-width: 100%;
+ 
+
+           p{
+        line-height: 30px;
+        font-size: 16px;
+        margin: 20px 50px;
+
+
+    }
+
+        
+    
+        .icon{
+            width: 30px;
+            height:30px;
+
+        }
+
+
+
+    }}}
+
+    @media screen and (min-width: 1920px){
+        
+#self-intro{
+
+ .self-image{
+
+
+    bottom:-20%;
+ }    
+}}
+
